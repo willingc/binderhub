@@ -8,9 +8,9 @@ dependencies:
 - sphinx_rtd_theme
 - mne
 - graphviz
-- kubernetes
 - pip:
   - jupyter_alabaster_theme
   - recommonmark==0.4.0
   - pygraphviz==1.4rc1
   - docker
+  - kubernetes
