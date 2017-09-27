@@ -1,9 +1,10 @@
+====
 main
 ====
 
 
 Module: :mod:`binderhub.main`
------------------------------
+=============================
 
 .. automodule:: binderhub.main
 

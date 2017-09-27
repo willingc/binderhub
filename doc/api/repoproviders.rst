@@ -1,8 +1,9 @@
+=============
 repoproviders
 =============
 
 Module: :mod:`binderhub.repoproviders`
---------------------------------------
+======================================
 
 .. automodule:: binderhub.repoproviders
 

@@ -1,9 +1,10 @@
+========
 redirect
 ========
 
 
 Module: :mod:`binderhub.redirect`
----------------------------------
+=================================
 
 .. automodule:: binderhub.redirect
 

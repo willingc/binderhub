@@ -1,11 +1,10 @@
+========
 registry
 ========
 
-binderhub.repoproviders
-
 
 Module: :mod:`binderhub.registry`
----------------------------------
+=================================
 
 .. automodule:: binderhub.registry
 
