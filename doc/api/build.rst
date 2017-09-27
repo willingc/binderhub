@@ -1,9 +1,10 @@
+=====
 build
 =====
 
 
 Module: :mod:`binderhub.build`
-------------------------------
+==============================
 
 .. automodule:: binderhub.build
 

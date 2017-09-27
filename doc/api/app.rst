@@ -14,3 +14,4 @@ Module: :mod:`binderhub.app`
 ------------------
 
 .. autoconfigurable:: BinderHub
+   :members:
