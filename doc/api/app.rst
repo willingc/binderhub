@@ -1,9 +1,10 @@
-app
-===
+=========================
+Application configuration
+=========================
 
 
 Module: :mod:`binderhub.app`
-----------------------------
+============================
 
 .. automodule:: binderhub.app
 
@@ -13,4 +14,3 @@ Module: :mod:`binderhub.app`
 ------------------
 
 .. autoconfigurable:: BinderHub
-    :members:
