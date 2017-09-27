@@ -184,4 +184,4 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 if not on_rtd:
     import jupyter_alabaster_theme
     html_theme = 'jupyter_alabaster_theme'
-    html_theme_path = [jupyter_alabaster_theme.get_path()]wd
+    html_theme_path = [jupyter_alabaster_theme.get_path()]
