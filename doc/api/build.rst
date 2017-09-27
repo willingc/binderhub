@@ -14,5 +14,5 @@ Module: :mod:`binderhub.build`
 :class:`Build`
 --------------
 
-.. autoclass:: Build
-    :members:
+.. autoconfigurable:: Build
+   :members:

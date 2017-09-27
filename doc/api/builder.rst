@@ -1,9 +1,10 @@
+=======
 builder
 =======
 
 
 Module: :mod:`binderhub.builder`
---------------------------------
+================================
 
 .. automodule:: binderhub.builder
 
@@ -12,5 +13,5 @@ Module: :mod:`binderhub.builder`
 :class:`BuildHandler`
 ---------------------
 
-.. autoclass:: BuildHandler
-    :members:
+.. autoconfigurable:: BuildHandler
+   :members:
