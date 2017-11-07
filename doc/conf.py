@@ -133,6 +133,8 @@ html_sidebars = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# Suppress trailing '.' on section numbers
+html_secnumber_suffix = ' '
 
 # -- Options for HTMLHelp output ------------------------------------------
 
