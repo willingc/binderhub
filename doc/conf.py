@@ -134,7 +134,7 @@ html_sidebars = {
 html_static_path = ['_static']
 
 # Suppress trailing '.' on section numbers
-html_secnumber_suffix = ''
+html_secnumber_suffix = '   '
 
 # -- Options for HTMLHelp output ------------------------------------------
 
