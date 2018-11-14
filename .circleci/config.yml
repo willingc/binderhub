@@ -2,22 +2,21 @@ version: 2
 jobs:
   build_docs:
     docker:
-      - image: circleci/python:3.6-stretch
+      - image: circleci/python:3.6.7-stretch-node
     steps:
       - checkout
 
       - run:
-          name: Install NPM
+          name: smoke test node
           command: |
-            curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-            sudo apt-get install -y nodejs
+            node --version
 
-      # Install documentation requirements in the same way that ReadTheDocs
-      # does to check our dependencies are all specified
       - run:
           name: Install doc dependencies
           command: |
-            sudo pip install -r doc/doc-requirements.txt
+            /python3.6/bin/pip install -U pip setuptools
+            /python3.6/bin/pip install -r doc/doc-requirements.txt
+            /python3.6/bin/pip install -r requirements.txt
 
       # Build the docs
       - run:
