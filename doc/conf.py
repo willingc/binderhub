@@ -19,17 +19,18 @@
 #
 import os
 import sys
+
+import alabaster_jupyterhub
 import requests
-curdir = os.path.dirname(__file__)
-sys.path.append(os.path.abspath(os.path.join(curdir, 'script')))
+#curdir = os.path.dirname(__file__)
+#sys.path.append(os.path.abspath(os.path.join(curdir, 'script')))
 
 # set paths
 from os.path import dirname
 docs = dirname(dirname(__file__))
 root = dirname(docs)
 sys.path.insert(0, root)
-sys.path.insert(0, 'sphinxext')
-sys.path.insert(0, '..')
+sys.path.insert(0, os.path.join(docs, 'sphinxext'))
 
 # -- General configuration ------------------------------------------------
 
@@ -106,8 +107,6 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
-import alabaster_jupyterhub
 html_theme = 'alabaster_jupyterhub'
 html_theme_path = [alabaster_jupyterhub.get_html_theme_path()]
 
@@ -216,3 +215,14 @@ with open('./helm.txt', 'w') as ff:
 def setup(app):
     app.add_stylesheet('https://gitcdn.link/repo/jupyterhub/binder/master/doc/_static/custom.css')
 
+# -- ReadTheDocs
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+if not on_rtd:
+    html_theme = 'alabaster_jupyterhub'
+    html_theme_path = [alabaster_jupyterhub.get_html_theme_path()]
+else:
+    # readthedocs.org uses their theme by default, so no need to specify it
+    # build reference, since RTD doesn't run make
+    from subprocess import check_call as sh
+
+    sh(['make', 'html'], cwd=docs)
