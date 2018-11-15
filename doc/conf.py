@@ -220,9 +220,3 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 if not on_rtd:
     html_theme = 'alabaster_jupyterhub'
     html_theme_path = [alabaster_jupyterhub.get_html_theme_path()]
-else:
-    # readthedocs.org uses their theme by default, so no need to specify it
-    # build reference, since RTD doesn't run make
-    from subprocess import check_call as sh
-
-    sh(['make', 'html'], cwd=docs)
