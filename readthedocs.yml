@@ -2,5 +2,5 @@ name: binderhub
 type: sphinx
 requirements_file: doc/doc-requirements.txt
 python:
-  version: 3.6
+  version: 3
   setup_py_install: true
