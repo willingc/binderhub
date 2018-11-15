@@ -30,7 +30,7 @@ from os.path import dirname
 docs = dirname(dirname(__file__))
 root = dirname(docs)
 sys.path.insert(0, root)
-sys.path.insert(0, os.path.join(docs, 'sphinxext'))
+sys.path.insert(0, 'sphinxext')
 
 # -- General configuration ------------------------------------------------
 
