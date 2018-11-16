@@ -20,6 +20,7 @@ project_root = os.path.dirname(cwd)
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.join(project_root, 'binderhub'))
 sys.path.append(os.path.join(project_root, 'doc/reference'))
+sys.path.append(os.path.join(project_root, 'doc/sphinxext'))
 
 # -- General configuration ------------------------------------------------
 
