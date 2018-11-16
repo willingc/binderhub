@@ -18,7 +18,7 @@ project_root = os.path.dirname(cwd)
 # This lets us ensure that the source package is imported, and that its
 # version is used.
 sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.join(project_root, 'binderhub'))
+#sys.path.insert(0, os.path.join(project_root, 'binderhub'))
 sys.path.append(os.path.join(project_root, 'doc/reference'))
 sys.path.append(os.path.join(project_root, 'doc/sphinxext'))
 
