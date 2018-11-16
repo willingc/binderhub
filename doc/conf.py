@@ -13,11 +13,13 @@ import requests
 # Set paths
 sys.path.insert(0, os.path.abspath('.'))
 docs = dirname(__file__)
+print(docs)
 root = dirname(docs)
+print(root)
 sys.path.insert(0, root)
 sys.path.insert(0, os.path.join(docs, 'sphinxext'))
-sys.path.insert(0, os.path.join(root, 'binderhub'))
-
+sys.path.insert(0, os.path.join(root, 'binderhub/'))
+print(sys.path)
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
