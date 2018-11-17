@@ -4,5 +4,5 @@ channels:
 dependencies:
   - python=3.6
   - pip:
-      - -r doc-requirements.txt
+      - -r doc/doc-requirements.txt
       - -e .
