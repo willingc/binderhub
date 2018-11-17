@@ -1,6 +1,12 @@
+pip install --upgrade pip
+
 name: binderhub
 type: sphinx
+
+python:
+  version: 3.6
+  setup.py: true
+
 conda:
   file: doc/environment.yml
-python:
-  version: 3
+
