@@ -94,6 +94,7 @@ todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
 
+import alabaster_jupyterhub
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = 'alabaster_jupyterhub'
@@ -204,8 +205,3 @@ with open('./helm.txt', 'w') as ff:
 def setup(app):
     app.add_stylesheet('https://gitcdn.link/repo/jupyterhub/binder/master/doc/_static/custom.css')
 
-# -- ReadTheDocs
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-if not on_rtd:
-    html_theme = 'alabaster_jupyterhub'
-    html_theme_path = [alabaster_jupyterhub.get_html_theme_path()]
