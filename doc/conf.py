@@ -7,7 +7,6 @@ import os
 from os.path import dirname
 import sys
 
-import alabaster_jupyterhub
 import requests
 
 # Get the project root dir, which is the parent dir of this
