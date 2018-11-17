@@ -3,6 +3,18 @@ channels:
   - conda-forge
 dependencies:
   - python=3.6
+  - sphinx
+  - kubernetes>=4.*
+  - escapism
+  - tornado
+  - traitlets
+  - docker
+  - jinja2
+  - prometheus_client
+  - python-json-logger
+  - jupyterhub
+  - jsonschema
   - pip:
-      - -r doc/doc-requirements.txt
-      - -e .
+      - alabaster_jupyterhub
+      - recommonmark
+      - sphinx-copybutton
