@@ -2,7 +2,7 @@ name: binderhub
 type: sphinx
 
 python:
-  version: 3.6
+  version: 3.5
   setup.py: true
 
 conda:
