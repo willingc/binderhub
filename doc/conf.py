@@ -94,7 +94,7 @@ todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
 
-import alabaster_jupyterhub
+import alabaster-jupyterhub
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = 'alabaster_jupyterhub'

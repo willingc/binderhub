@@ -2,7 +2,7 @@ name: binderhub
 channels:
   - conda-forge
 dependencies:
-  - python=3.7
+  - python=3.6
   - sphinx
   - kubernetes>=4.*
   - escapism
@@ -15,6 +15,6 @@ dependencies:
   - jupyterhub
   - jsonschema
   - pip:
-      - alabaster_jupyterhub
       - recommonmark
       - sphinx-copybutton
+      - alabaster_jupyterhub
