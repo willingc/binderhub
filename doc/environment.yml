@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python=3.5
   - sphinx
-  - kubernetes>=4.*
+  - kubernetes
   - escapism
   - tornado
   - traitlets
