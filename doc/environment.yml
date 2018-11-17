@@ -8,13 +8,13 @@ dependencies:
   - escapism
   - tornado
   - traitlets
-  - docker
   - jinja2
   - prometheus_client
   - python-json-logger
   - jupyterhub
   - jsonschema
   - pip:
+      - docker
       - recommonmark
       - sphinx-copybutton
       - alabaster_jupyterhub
